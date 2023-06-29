@@ -20,8 +20,9 @@ class Solution
     int maxDistance(vector<int> &position, int m)
     {
         sort(position.begin(), position.end());
+        int n=position.size();
         int lo = 1;
-        int hi = *max_element(position.begin(), position.end());
+        int hi = position[n-1];
         int ans;
         while (lo <= hi)
         {
