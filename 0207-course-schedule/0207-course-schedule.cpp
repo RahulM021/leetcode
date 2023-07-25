@@ -9,8 +9,6 @@ public:
             adj[prerequisites[i][1]].push_back(prerequisites[i][0]);
         }
         for(int i=0;i<prerequisites.size();i++){
-            if(prerequisites[i][0]==prerequisites[i][1])
-            return false;
             ind[prerequisites[i][0]]++;
         }
         for(int i=0;i<numCourses;i++){
